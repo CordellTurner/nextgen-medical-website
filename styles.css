@@ -942,6 +942,24 @@ h2 {
   max-width: 490px;
 }
 
+.about-provider-bio {
+  padding-bottom: 52px;
+}
+
+.about-family {
+  padding-top: 36px;
+}
+
+.about-family .provider-copy {
+  max-width: 760px;
+  margin-inline: auto;
+  text-align: center;
+}
+
+.about-family .eyebrow {
+  justify-content: center;
+}
+
 .why {
   background: #eff6fb;
 }
