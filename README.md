@@ -13,6 +13,7 @@ Open `index.html` in a browser, or serve this directory with any static web serv
 - `about.html` — provider background, credentials, and practice approach
 - `contact.html` — Lake Wylie address, hours, phone, map, directions, and booking
 - `faq.html` — dedicated answers about appointments, services, labs, payment, and office location
+- `privacy.html` — draft website privacy policy for practice review before publication
 - `services/` — individual pages for weight management, hormone care, peptide therapy, vitamins, regenerative medicine, rheumatology, and lab services
 - `sitemap.xml` and `robots.txt` — search engine discovery and crawl guidance
 - `.github/workflows/deploy-pages.yml` — publishes the static site to GitHub Pages on each push to `main`

@@ -356,7 +356,7 @@ h2 em {
 
 .hero-proof p {
   margin: 0;
-  color: #64798c;
+  color: #52697c;
   font-size: 10px;
   line-height: 1.6;
 }
@@ -473,7 +473,7 @@ h2 em {
 
 .trust-item small {
   margin-top: 3px;
-  color: #64798c;
+  color: #52697c;
   font-size: 10px;
 }
 
@@ -569,7 +569,7 @@ h2 {
 
 .service-card p {
   margin-bottom: 19px;
-  color: #64798c;
+  color: #52697c;
   font-size: 11px;
   line-height: 1.75;
 }
@@ -590,7 +590,7 @@ h2 {
 
 .service-note {
   margin: 15px 0 0;
-  color: #64798c;
+  color: #52697c;
   font-size: 10px;
 }
 
@@ -652,7 +652,7 @@ h2 {
 
 .vitamin-disclaimer {
   margin: 13px 0 18px;
-  color: #63788b;
+  color: #52697c;
   font-size: 9px;
   line-height: 1.65;
 }
@@ -728,7 +728,7 @@ h2 {
 
 .vitamin-card-note {
   margin-top: 10px;
-  color: #63788b;
+  color: #52697c;
   font-size: 9px;
   letter-spacing: 0.08em;
   text-transform: uppercase;
@@ -934,7 +934,7 @@ h2 {
 
 .provider-note small {
   margin-top: 3px;
-  color: #64798c;
+  color: #52697c;
   font-size: 9px;
 }
 
@@ -1000,7 +1000,7 @@ h2 {
 .why-card p {
   max-width: 290px;
   margin: 0;
-  color: #63788b;
+  color: #52697c;
   font-size: 10px;
   line-height: 1.8;
 }
@@ -1177,7 +1177,7 @@ h2 {
 
 .credential small {
   margin-top: 2px;
-  color: #64798c;
+  color: #52697c;
   font-size: 9px;
 }
 
@@ -1235,7 +1235,7 @@ h2 {
 
 .price-detail {
   margin-top: 3px;
-  color: #63788b;
+  color: #52697c;
   font-size: 10px;
 }
 
@@ -1249,7 +1249,7 @@ h2 {
 .price-includes {
   max-width: 440px;
   margin: 10px 0 0;
-  color: #63788b;
+  color: #52697c;
   font-size: 10px;
   line-height: 1.75;
 }
@@ -1268,7 +1268,7 @@ h2 {
   border-radius: 3px;
   padding: 12px;
   background: #e8f3f9;
-  color: #63788b;
+  color: #52697c;
   font-size: 10px;
   line-height: 1.55;
 }
@@ -1366,7 +1366,7 @@ h2 {
 .faq-item > p {
   max-width: 540px;
   margin: -1px 30px 20px 0;
-  color: #63788b;
+  color: #52697c;
   font-size: 11px;
   line-height: 1.85;
 }
@@ -1432,7 +1432,7 @@ h2 {
 
 .location-copy address {
   margin-bottom: 9px;
-  color: #63788b;
+  color: #52697c;
   font-size: 12px;
   font-style: normal;
   line-height: 1.8;
@@ -1500,7 +1500,7 @@ h2 {
 
 .location-card-label {
   margin-top: 19px;
-  color: #64798c;
+  color: #52697c;
   font-size: 9px;
   letter-spacing: 0.15em;
   text-transform: uppercase;
@@ -1553,6 +1553,41 @@ h2 {
   padding-block: 76px 68px;
 }
 
+.privacy-content {
+  max-width: 900px;
+  padding-top: 0;
+}
+
+.privacy-content article {
+  border-bottom: 1px solid var(--line);
+  padding: 0 0 25px;
+  margin: 0 0 25px;
+}
+
+.privacy-content h2 {
+  margin: 0 0 12px;
+  font-size: clamp(23px, 3vw, 32px);
+}
+
+.privacy-content p,
+.privacy-content address {
+  max-width: 760px;
+  color: #52697c;
+  font-size: 14px;
+  line-height: 1.85;
+}
+
+.privacy-content address {
+  font-style: normal;
+}
+
+.privacy-content a {
+  color: var(--brand-blue);
+  font-weight: 700;
+  text-decoration: underline;
+  text-underline-offset: 3px;
+}
+
 .page-hero h1,
 .service-page-hero h1 {
   max-width: 790px;
@@ -1598,7 +1633,7 @@ h2 {
 }
 
 .catalog-number {
-  color: #64798c;
+  color: #52697c;
   font-size: 9px;
   font-weight: 700;
   letter-spacing: 0.13em;
@@ -1615,7 +1650,7 @@ h2 {
 .catalog-card > p {
   min-height: 42px;
   margin: 0;
-  color: #64798c;
+  color: #52697c;
   font-size: 10px;
   line-height: 1.7;
 }
@@ -1641,7 +1676,7 @@ h2 {
 
 .catalog-note {
   margin: 14px 0 0;
-  color: #64798c;
+  color: #52697c;
   font-size: 10px;
   line-height: 1.7;
 }
@@ -1760,7 +1795,7 @@ h2 {
 
 .care-section > p:not(.eyebrow) {
   margin: 0;
-  color: #63788b;
+  color: #52697c;
   font-size: 12px;
   line-height: 1.9;
 }
@@ -1778,7 +1813,7 @@ h2 {
 }
 
 .aside-label {
-  color: #63788b;
+  color: #52697c;
   font-size: 9px;
   font-weight: 700;
   letter-spacing: 0.16em;
@@ -1795,7 +1830,7 @@ h2 {
 
 .aside-description {
   margin: 4px 0 19px;
-  color: #63788b;
+  color: #52697c;
   font-size: 11px;
   line-height: 1.6;
 }
@@ -1823,7 +1858,7 @@ h2 {
   margin: 19px 0 0;
   border-top: 1px solid var(--line);
   padding-top: 13px;
-  color: #64798c;
+  color: #52697c;
   font-size: 9px;
   line-height: 1.7;
 }
@@ -1850,7 +1885,7 @@ h2 {
 
 .injection-list p {
   margin: 0;
-  color: #63788b;
+  color: #52697c;
   font-size: 9px;
   line-height: 1.7;
 }
@@ -1896,7 +1931,7 @@ h2 {
 
 .peptide-detail p {
   margin: 0 0 9px;
-  color: #63788b;
+  color: #52697c;
   font-size: 10px;
   line-height: 1.75;
 }
@@ -1922,7 +1957,7 @@ h2 {
   border-left: 2px solid #60b4d5;
   padding: 10px 12px;
   background: rgba(96, 192, 224, 0.7);
-  color: #63788b;
+  color: #52697c;
   font-size: 9px;
   line-height: 1.75;
 }
