@@ -231,14 +231,33 @@ summary:focus-visible {
 .hero {
   display: grid;
   min-height: 0;
-  grid-template-columns: 1fr;
+  grid-template-columns: minmax(0, 1.35fr) minmax(220px, 0.65fr);
   align-items: center;
+  gap: 5%;
   padding-block: 82px;
 }
 
 .hero-copy {
-  max-width: 850px;
+  max-width: 760px;
   padding-top: 12px;
+}
+
+.hero-brand-visual {
+  display: grid;
+  width: min(100%, 280px);
+  aspect-ratio: 1;
+  justify-self: center;
+  place-items: center;
+  border: 1px solid #e1edf3;
+  border-radius: 50%;
+  background: radial-gradient(circle, #ffffff 0 46%, #eef7fb 47% 100%);
+}
+
+.hero-brand-visual img {
+  display: block;
+  width: 78%;
+  height: 78%;
+  object-fit: contain;
 }
 
 .eyebrow {
@@ -2157,6 +2176,8 @@ h2 {
 
   .hero {
     min-height: 0;
+    grid-template-columns: minmax(0, 1.2fr) minmax(190px, 0.8fr);
+    gap: 4%;
   }
 
   .hero-actions {
@@ -2345,6 +2366,11 @@ h2 {
 
   .hero-proof {
     margin-top: 27px;
+  }
+
+  .hero-brand-visual {
+    width: 138px;
+    margin: 30px auto 0;
   }
 
   .local-visit-inner {
