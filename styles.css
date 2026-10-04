@@ -116,9 +116,11 @@ summary:focus-visible {
 }
 
 .site-header {
-  position: relative;
+  position: sticky;
+  top: 0;
   z-index: 10;
   background: var(--cream);
+  box-shadow: 0 5px 18px rgba(24, 46, 45, 0.04);
 }
 
 .header-inner {
@@ -141,6 +143,7 @@ summary:focus-visible {
 .brand-mark {
   width: 39px;
   height: 39px;
+  object-fit: contain;
 }
 
 .brand-mark svg {
@@ -396,6 +399,47 @@ h2 em {
 .hero-proof strong {
   color: var(--ink);
   font-size: 11px;
+}
+
+.local-visit {
+  border-block: 1px solid var(--line);
+  background: #f1f0e8;
+}
+
+.local-visit-inner {
+  display: flex;
+  min-height: 130px;
+  align-items: center;
+  justify-content: space-between;
+  gap: 24px;
+  padding-block: 20px;
+}
+
+.local-visit .eyebrow {
+  margin-bottom: 4px;
+  font-size: 9px;
+}
+
+.local-visit-title {
+  margin: 0;
+  color: var(--ink-deep);
+  font-family: var(--serif);
+  font-size: 23px;
+  font-weight: 600;
+  letter-spacing: -0.025em;
+  line-height: 1.3;
+}
+
+.local-visit-address {
+  margin: 3px 0 0;
+  color: var(--muted);
+  font-size: 11px;
+}
+
+.local-visit-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 24px;
 }
 
 .hero-visual {
@@ -1135,37 +1179,13 @@ h2 {
   background: #f8f7f1;
 }
 
-.review-stars {
-  color: #b87b4f;
-  font-size: 17px;
-  letter-spacing: 0.11em;
-}
-
-.testimonial-card blockquote {
-  position: relative;
-  z-index: 1;
+.testimonial-card > p {
   max-width: 620px;
-  margin: 20px 0 15px;
+  margin: 0 0 22px;
   color: var(--ink);
   font-family: var(--serif);
   font-size: clamp(22px, 2.7vw, 31px);
   line-height: 1.38;
-}
-
-.testimonial-card figcaption {
-  color: #6e7b70;
-  font-size: 11px;
-  font-weight: 700;
-}
-
-.quote-mark {
-  position: absolute;
-  right: 20px;
-  bottom: 2px;
-  color: #e8e7dc;
-  font-family: var(--serif);
-  font-size: 120px;
-  line-height: 1;
 }
 
 .provider-name {
@@ -1448,6 +1468,20 @@ h2 {
   gap: 12%;
 }
 
+.location-map-wrap {
+  min-height: 330px;
+  overflow: hidden;
+  border: 1px solid #e2e0d4;
+  background: #e9ece2;
+}
+
+.location-map {
+  display: block;
+  width: 100%;
+  height: 330px;
+  border: 0;
+}
+
 .location-copy {
   max-width: 500px;
 }
@@ -1479,6 +1513,18 @@ h2 {
   font-family: var(--serif);
   font-size: 20px;
   font-weight: 600;
+}
+
+.location-hours {
+  margin: 0 0 20px;
+  color: var(--muted);
+  font-size: 12px;
+  line-height: 1.8;
+}
+
+.location-hours strong {
+  display: block;
+  color: var(--ink);
 }
 
 .location-card {
@@ -2121,7 +2167,53 @@ h2 {
 }
 
 .mobile-booking {
-  display: none;
+  position: fixed;
+  z-index: 12;
+  right: 24px;
+  bottom: 24px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  border: 1px solid rgba(32, 58, 56, 0.12);
+  border-radius: 4px;
+  padding: 8px;
+  background: rgba(248, 247, 241, 0.96);
+  box-shadow: 0 8px 22px rgba(24, 46, 45, 0.12);
+  backdrop-filter: blur(12px);
+}
+
+.mobile-booking .button {
+  min-height: 47px;
+  gap: 10px;
+  padding-inline: 14px;
+  font-size: 11px;
+}
+
+.mobile-call {
+  display: inline-flex;
+  min-height: 47px;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  border: 1px solid #d8ded3;
+  border-radius: 3px;
+  padding-inline: 12px;
+  color: var(--green);
+  font-size: 11px;
+  font-weight: 700;
+}
+
+.mobile-call svg {
+  width: 19px;
+  flex: 0 0 19px;
+  stroke: currentColor;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+  stroke-width: 1.7;
+}
+
+.mobile-call::after {
+  content: "Call Now";
 }
 
 @media (min-width: 1500px) {
@@ -2310,8 +2402,8 @@ h2 {
   .hero {
     min-height: initial;
     grid-template-columns: 1fr;
-    gap: 43px;
-    padding-block: 55px 55px;
+    gap: 0;
+    padding-block: 38px;
   }
 
   .hero-copy {
@@ -2325,7 +2417,7 @@ h2 {
   }
 
   h1 {
-    font-size: clamp(53px, 13vw, 72px);
+    font-size: clamp(44px, 11.7vw, 62px);
   }
 
   .hero-intro {
@@ -2355,38 +2447,20 @@ h2 {
     margin-top: 27px;
   }
 
+  .local-visit-inner {
+    align-items: flex-start;
+    flex-direction: column;
+    justify-content: center;
+    gap: 13px;
+    padding-block: 23px;
+  }
+
+  .local-visit-actions {
+    gap: 20px;
+  }
+
   .hero-visual {
-    width: min(100%, 450px);
-    justify-self: center;
-    padding-left: 18px;
-  }
-
-  .hero-image {
-    aspect-ratio: 1.04;
-    border-radius: 47% 47% 3px 3px;
-  }
-
-  .hero-stamp {
-    top: 29%;
-    left: -14px;
-    width: 104px;
-    height: 104px;
-  }
-
-  .image-label {
-    right: 10px;
-    bottom: 10px;
-    left: 10px;
-    gap: 9px;
-    padding: 9px;
-  }
-
-  .image-label strong {
-    font-size: 12px;
-  }
-
-  .image-label small {
-    font-size: 8px;
+    display: none;
   }
 
   .trust-inner {
@@ -2589,14 +2663,8 @@ h2 {
     padding: 25px 22px;
   }
 
-  .testimonial-card blockquote {
-    margin: 15px 0 12px;
+  .testimonial-card > p {
     font-size: 23px;
-  }
-
-  .quote-mark {
-    right: 10px;
-    font-size: 95px;
   }
 
   .credential strong {
@@ -2677,6 +2745,12 @@ h2 {
   .location-card {
     min-height: 270px;
     padding: 26px;
+  }
+
+  .location-map-wrap,
+  .location-map {
+    min-height: 280px;
+    height: 280px;
   }
 
   .services-more {
@@ -2906,22 +2980,9 @@ h2 {
   }
 
   .mobile-call {
-    display: grid;
-    width: 47px;
-    height: 47px;
-    flex: 0 0 47px;
-    place-items: center;
-    border: 1px solid #d8ded3;
-    border-radius: 3px;
+    min-height: 47px;
+    flex: 0 0 auto;
     background: var(--white);
-  }
-
-  .mobile-call svg {
-    width: 20px;
-    stroke: var(--green);
-    stroke-linecap: round;
-    stroke-linejoin: round;
-    stroke-width: 1.7;
   }
 }
 
