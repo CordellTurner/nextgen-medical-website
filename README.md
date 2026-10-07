@@ -18,7 +18,7 @@ Open `index.html` in a browser, or serve this directory with any static web serv
 - `sitemap.xml` and `robots.txt` — search engine discovery and crawl guidance
 - `.github/workflows/deploy-pages.yml` — publishes the static site to GitHub Pages on each push to `main`
 - The homepage includes the local business structured data and embedded Google Map; appointment links point to the practice's existing online scheduler.
-- The supplied NeXtGen logo is used throughout the site, with the blue/aqua theme sampled from its artwork. The homepage hero is intentionally photo-free.
+- The supplied NeXtGen logo is used throughout the site, with the blue/aqua theme sampled from its artwork. The homepage hero uses a locally hosted lifestyle photo from Pexels.
 - `styles.min.css` and `script.min.js` — production assets generated from the readable sources with `python scripts/minify_assets.py`
 
 Regenerate the minified assets after editing `styles.css` or `script.js`.

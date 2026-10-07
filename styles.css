@@ -231,14 +231,49 @@ summary:focus-visible {
 .hero {
   display: grid;
   min-height: 0;
-  grid-template-columns: 1fr;
+  grid-template-columns: minmax(0, 1fr) minmax(350px, 0.86fr);
   align-items: center;
+  gap: clamp(32px, 5vw, 72px);
   padding-block: 82px;
 }
 
 .hero-copy {
-  max-width: 760px;
+  max-width: 580px;
   padding-top: 12px;
+}
+
+.hero-provider-mobile {
+  display: none;
+}
+
+.hero-visual {
+  position: relative;
+  width: 100%;
+  max-width: 500px;
+  justify-self: end;
+  padding: 0 0 22px 22px;
+}
+
+.hero-visual::before {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  width: 78%;
+  height: 72%;
+  border-radius: 0 0 4px;
+  background: #dfeef6;
+  content: "";
+}
+
+.hero-visual img {
+  position: relative;
+  z-index: 1;
+  width: 100%;
+  aspect-ratio: 1 / 1;
+  border-radius: 3px 150px 3px 3px;
+  background: #e9f2f8;
+  object-fit: cover;
+  object-position: center;
 }
 
 .eyebrow {
@@ -2171,6 +2206,16 @@ h2 {
 @media (min-width: 1500px) {
   .hero {
     min-height: 0;
+    grid-template-columns: 1fr;
+  }
+
+  .hero-provider-mobile {
+    display: none;
+  }
+
+  .hero-visual {
+    justify-self: center;
+    margin-top: 32px;
   }
 }
 
@@ -2337,10 +2382,35 @@ h2 {
   }
 
   .hero {
+    display: flex;
     min-height: initial;
-    grid-template-columns: 1fr;
+    flex-direction: column;
     gap: 0;
     padding-block: 38px;
+  }
+
+  .hero-provider-mobile {
+    display: block;
+    width: 100%;
+    max-width: 520px;
+    margin: 0 auto 26px;
+  }
+
+  .hero-provider-mobile img {
+    width: 100%;
+    aspect-ratio: 1.3 / 1;
+    border-radius: 3px 110px 3px 3px;
+    background: #e9f2f8;
+    object-fit: cover;
+    object-position: center 28%;
+  }
+
+  .hero-visual {
+    display: none;
+  }
+
+  .provider-photo-wrap {
+    display: none;
   }
 
   .hero-copy {
