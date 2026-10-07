@@ -854,6 +854,10 @@ h2 {
   padding: 0 25px 25px 0;
 }
 
+.provider-photo-wrap-mobile {
+  display: none;
+}
+
 .provider-photo-wrap img {
   position: relative;
   z-index: 1;
@@ -2586,6 +2590,16 @@ h2 {
 
   .provider-photo-wrap {
     width: min(100% - 22px, 420px);
+  }
+
+  .home-page .provider-photo-wrap-desktop {
+    display: none;
+  }
+
+  .provider-photo-wrap-mobile {
+    display: block;
+    width: min(100% - 22px, 420px);
+    margin: 28px auto 24px;
   }
 
   .provider-photo-wrap img {
